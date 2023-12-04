@@ -17,8 +17,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from django.shortcuts import render
-from page_app.views import home
+from page_app.views import home, principal, footer, header
 
 urlpatterns = [
-    path('', include('home.urls')),
+    path('', principal),
+    path('sobre-mim/', footer),
+    path('contato/', header),
 ]

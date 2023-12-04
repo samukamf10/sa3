@@ -6,7 +6,7 @@ def home (requests):
     )
     
 def footer (requests):
-    return render(requests, "page_app/footer.html"
+    return render(requests, "page_app/sobre-mim.html"
     )
     
 def principal (requests):
@@ -14,6 +14,6 @@ def principal (requests):
     )
     
 def header (requests):
-    return render(requests, "page_app/header.html"
+    return render(requests, "page_app/contato.html"
     )
     
