@@ -1,0 +1,124 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+        {% include "page_app/header.html" %}
+         
+        <title>Samuel dos Santos Biografia</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+       
+        <link rel="stylesheet" href= "{% static 'page_app/styles.css' %}" >
+        <style>
+                   
+          body {
+              font-family: "Droid Sans", Georgia, Serif;
+          }
+        
+          h1,
+          h2,
+          h3,
+          h4,
+          h5,
+          h6 {
+              font-family: "Times New Roman";
+              letter-spacing: 5px;
+          }
+      </style>
+    {% include "page_app/home.html" %} 
+      
+     <!-- desenvolvimento Section -->
+
+     <div class="w3-content" style="max-width:1100px">
+   
+      <div class="w3-row w3-padding-64" style="max-width:1300px;min-width:700px" id="desenvolvimento">
+          <div class="w3-col m6 w3-padding-xxlarge w3-hide-xxlarge">
+              <img src= "{% static 'page_app/img/samuel desenvolvimento TI.jpg' %}" class="w3-round w3-image w3-opacity-min" alt="desenvolvimento" style="width:90%"
+                  height="800">
+          </div>
+           <div class="w3-col m6 w3-padding-large">
+              <h1 class="w3-center">Desenvolvimento de Sistemas</h1><br>
+              <p class="w3-large">Full Stack é o profissional capaz de operar em todas as etapas de desenvolvimento de um projeto. 
+                  Sua capacidade de enxergar o projeto como um todo, do Front ao Back-end, é um diferencial estratégico para as empresas,
+                   especialmente quando se trata de Java. <span
+                      class="w3-tag w3-light-grey">PYTHON</span>, node js</p>
+                      <h4 class="w3-center">Inglês</h4><br> 
+              <p class="w3-large w3-text-grey w3-hide-medium">Full Stack is a professional capable of operating at all stages of a project’s
+                   development. Your ability to see the project as a whole, from Front to Back-end, is a strategic differentiator for companies, 
+                   especially when it comes to Java, python, node js</p>
+
+          </div>
+          </div>
+      
+      <hr>
+
+      <!-- sobre mim Section -->
+              <div class="w3-row w3-padding-64" id="sobremim">
+          <div class="w3-col l6 w3-padding-large">
+              <h1 class="w3-center">Sobre Mim</h1><br>
+              <h5>Front end</h5>
+              <p class="w3-text-grey">parte visual de um site, aquilo que conseguimos interagir. 
+                  Quem trabalha com Front End é responsável por desenvolver por meio do código uma interface gráfica e, normalmente, 
+                  com as tecnologias base da Web: HTML, CSS e JavaScript.</p><br>
+
+              <h5>Back end</h5>
+              <p class="w3-text-grey">Back-End trabalha em boa parte dos casos fazendo a ponte entre os dados que vem do navegador rumo ao 
+                banco de dados e vice-versa, 
+                  sempre aplicando as devidas regras de negócio, validações e garantias num ambiente restrito ao usuário final 
+                  (ou seja, onde ele não consegue acessar ou manipular algo).</p><br>
+
+                  <h5>Full stack</h5>
+              <p class="w3-text-grey">Full Stack developer é quem trabalha com Front End e Back End.</p><br>
+
+              <h3>Analista de sistemas</h3>
+              <p class="w3-large w3-text-grey w3-hide-small">O analista de sistemas desempenha um papel crucial na indústria de Tecnologia da Informação, 
+                  utilizando sua expertise para criar programas personalizados que atendam às necessidades exclusivas das empresas. 
+                  Basicamente, ele é encarregado de projetar e desenvolver soluções inovadoras que resolvam os desafios enfrentados pelas 
+                  organizações modernas, por meio de sistemas computacionais avançados.</p><br>
+              </div>
+
+          <div class="w3-col l6 w3-padding-large">
+              <img src="{% static 'page_app/img/samuel dos santos (1).png' %}" alt="Imagem Sds" class="w3-round w3-image w3-opacity-min" alt="sobremim" style="width:90%">
+          </div>
+      </div>
+
+      <hr>
+
+      <!-- Contato Section -->
+      <div class="w3-container w3-padding-64" id="contato">
+          <div class="w3-col l6 w3-padding-large">               
+             <div class="container mt-3">
+              <img src="{% static 'page_app/img/imagemsdsjpng.png' %}" class="rounded-circle" alt="Cinque Terre" width="304" height="236"
+              alt="Imagem Sds" class="w3-round w3-image w3-opacity-min" alt="Menu" style="width:50%">
+              <p class="w3-text-grey">   Samuel dos Santos - @estudante.Senai </p>
+          </div>
+          </div>
+          <h1>Contato</h1><br>
+          <p>Minha experiência abrange diversas áreas da TI, desde desenvolvimento de software até arquitetura de sistemas complexos.
+               Desenvolvi competências em inteligência artificial, segurança da informação e cloud computing, sempre alinhando-me às 
+               demandas dinâmicas do setor.</p>
+          <p class="w3-text-blue-grey w3-large"><b> Morro da Fumaça CEP 88830-000 Santa Catarina - BRASIL</b></p>
+          <p>Você também pode contatar pelo telefone/whatsapp (48) 98800-2645  
+          <form action="/action_page.php" target="_blank">
+          </div>
+          
+          <div class="container mt-3">
+              <h6>+ detalhes</h6>
+              <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo">clique aqui</button>
+              <div id="demo" class="collapse">
+              samukamf@live.com  SAMUEL DOS SANTOS - ANALISTA DE DESENVOLVIMENTO DE SISTEMAS - SC.
+              </div>
+            </div>
+          </div>
+          </form>
+      </div>
+    </div>
+
+    {% include "page_app/footer.html" %}
+
+    </html>
