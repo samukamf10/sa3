@@ -17,10 +17,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from django.shortcuts import render
-from page_app.views import home, principal, footer, header
+from page_app.views import home, main, index, footer, header, sobre_mim, contato
 
 urlpatterns = [
-    path('', principal),
-    path('sobre-mim/', footer),
-    path('contato/', header),
+    path('', index),
+    path('sobre_mim/', sobre_mim),
+    path('header/', header),
+    path('home/', home),
+    path('contato/', contato),
+    path('footer/', footer),
+    path('main/', main),
 ]
