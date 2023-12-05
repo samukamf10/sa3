@@ -1,7 +1,28 @@
 {% load static %}
+{% include "page_app/header.html" %}
+<link rel="stylesheet" href="{% static 'page_app/styles.css' %}">
+<div class="w3-content" style="max-width:1100px">
+    
+    <div class="w3-row w3-padding-64" style="max-width:1100px;min-width:700px" id="home">
+        <div class="w3-col m6 w3-padding-xxlarge w3-hide-xxlarge">
+            <img src="{% static 'page_app/img/samuel desenvolvimento TI.jpg' %}"
+            class="w3-round w3-image w3-opacity-min" alt="desenvolvimento" style="width:90%" height="800">
+        
+       </div>
+            <h1 class="w3-center">Desenvolvimento de Sistemas</h1><br>
+            <p class="w3-large">Full Stack é o profissional capaz de operar em todas as etapas de desenvolvimento de um
+                projeto.
+                Sua capacidade de enxergar o projeto como um todo, do Front ao Back-end, é um diferencial estratégico
+                para as empresas,
+                especialmente quando se trata de Java. <span class="w3-tag w3-light-grey">PYTHON</span>, node js</p>
+            <h3 class="w3-center">Inglês</h3><br>
+            <p class="w3-large w3-text-grey w3-hide-medium">Full Stack is a professional capable of operating at all
+                stages of a project’s
+                development. Your ability to see the project as a whole, from Front to Back-end, is a strategic
+                differentiator for companies,
+                especially when it comes to Java, python, node js</p>
+        
+    </div>
+</div>
 
-<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;min-width:690px" id="home">
-     <img src="{% static 'page_app/img/samuel graduacao.gif' %}" alt="Samuel home" width="1500" height="690">
-     <div class="w3-display-bottomleft w3-padding-large w3-opacity">
-     </div>
-</header>
+{% include "page_app/footer.html" %}
